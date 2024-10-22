@@ -16,7 +16,7 @@
 
 .NavBar{
   margin-top: 0;
-  width: 8em;
+  width: 9em;
   background-color:  rgb(18, 18, 92);
   color: whitesmoke;
 }
@@ -31,7 +31,7 @@
   display: block;
   transition: 0.3s;
   text-align: left;
-  width: 5em;
+  width: 6em;
   background-color:  rgb(18, 18, 92);
 }
 
@@ -107,15 +107,11 @@ a{
 
 ul { list-style-type: none; } 
 
-.author{
+.description{
   margin-left: 1px;
   width: 25em;
 }
 
-.description{
-  display: block;
-  width: 39em;
-}
 
 .titleHeader{
   margin: 1em;

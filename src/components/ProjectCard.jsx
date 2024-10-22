@@ -1,7 +1,6 @@
 import { AiFillGithub } from "react-icons/ai";
 
 const ProjectCard = ({ project }) => {
-  // console.log(project)
   return (
     <div className="containerProject">
       <div className="topCard">
@@ -22,11 +21,12 @@ const ProjectCard = ({ project }) => {
           />
         </a>
         <div className="lateralFoto">
-        <p className="author"> Made by {project.author}</p>
-        <p className="author"> Using {project.techStack.join()}</p>
+        <p className="description"> Made by {project.author}</p>
+        <p className="description"> Using {project.techStack.join()}</p>
+        <p className="description">{project.description}</p>
         </div>
       </div>
-      <p className="description">{project.description}</p>
+
     </div>
   );
 };
