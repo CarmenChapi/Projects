@@ -13,7 +13,7 @@ const projectListArray = [
     },
     {
         name: "Questionaire",
-        author: "Pair programming: CarmenChapi and Ibrahim Ahmed",
+        author: "CarmenChapi and Ibrahim Ahmed",
         avatar : "src/assets/Question.png",
         link: "https://questionairecarmenchapi.netlify.app",
         github : "https://github.com/CarmenChapi/Questions.git",
@@ -22,7 +22,7 @@ const projectListArray = [
     },
     {
         name: "Calculator",
-        author: "Pair programming: CarmenChapi and Indigo Moorcroft",
+        author: "CarmenChapi and Indigo Moorcroft",
         avatar : "src/assets/Calculator.png",
         link: "https://calculator-carmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/Calculator.git",
@@ -31,12 +31,12 @@ const projectListArray = [
     },
     {
         name: "TV Guide",
-        author: "Pair programming: CarmenChapi and Martin Sutch",
+        author: "CarmenChapi and Martin Sutch",
         avatar : "src/assets/TVGuide.png",
         link: "https://tv-guide-carmen-chapi.netlify.app",
         github : "https://github.com/CarmenChapi/fe-react-data-visualisation",
         techStack : ["React", "CSS"],
-        description : "Be able to visualise data in React using third-party library in this case TV Guide",
+        description : "Visualise data in React using third-party library, in this case TV Guide",
     },
     {
         name: "NC News Front End",
@@ -44,24 +44,26 @@ const projectListArray = [
         avatar : "src/assets/NCNews.png",
         link: "https://ncnewscarmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/nc-news",
-        techStack : ["React", "CSS"],
-        description : "News Website C.R.U.D from the Front End perpective",
+        techStack : ["React", "CSS", "Axios"],
+        description : "News Website C.R.U.D from the Front End perpective using the API create in the BE-News",
     },
     {
         name: "ReadShare App Back End",
-        author: "Array of Sunshine",
-        avatar : "src/assets/TVGuide.png",
-        link: "https://hosting-api-yiyu.onrender.com/api/endpoints",
+        author: "the group Array of Sunshine as Final Project",
+        avatar : "src/assets/firebase.png",
+        link: "https://github.com/Array-of-Sunshine-Library-App/library-api",
         github : "https://github.com/Array-of-Sunshine-Library-App/library-api",
-        description : "Final Project. ",
+        techStack : ["Firebase", "JavaScript", "TDD"],
+        description : "Final Project. We planned and designed it as a group. In the back end, I developed some API endpoints and set up the project in Firebase.",
     },
     {
         name: "ReadShare App Front End",
-        author: "Array of Sunshine",
-        avatar : "src/assets/TVGuide.png",
+        author: "the group Array of Sunshine as Final Project",
+        avatar : "src/assets/react.svg",
         link: "",
+        techStack : ["TypeScript", "React-Native", "Axios"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",
-        description : "",
+        description : "Final Project : Front End. I participate developing the user sign in, register new user, etc. User Context. And bugging the deleting request using optimistic renderitation",
     }
 ]
 
@@ -71,7 +73,7 @@ const ProjectsList = () => {
     return<div>
 
             <ul key="ListProjects"  className="containerSide">
-            <p>Projects List</p>
+
             {projectListArray.map((project, index) => {
                { console.log(project.name)}
                 return <li key="index">

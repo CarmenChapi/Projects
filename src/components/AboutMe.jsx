@@ -3,7 +3,7 @@
 const AboutMe = () => {
     return<div className="containerSide">
         <p>Hello world!</p>
-        <p>My name is <b>Maria del Carmen Chaparro </b> (She/her)
+        <p>My name is <b className="name">Maria del Carmen Chaparro </b> (She/her)
         But people call me Carmen /kaar·muhn/</p>
         <img className="profileImage" alt="carmen picture" src="src/assets/carmenFoto.jpg"/>
 <p>I just finished a bootcamp with Northcoders and I created this website to show what I have learned.

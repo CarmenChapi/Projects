@@ -11,15 +11,14 @@
   flex-direction: row;
   align-items:first baseline;
   background-color: rgb(18, 18, 92);
-  color: antiquewhite;
-  color: white;
+  color:aqua;
 }
 
 .NavBar{
   margin-top: 0;
   width: 8em;
   background-color:  rgb(18, 18, 92);
-  color: white;
+  color: whitesmoke;
 }
 
 
@@ -28,7 +27,7 @@
   padding: 1em;
   margin: 1em;
   text-decoration: none;
-  color: whitesmoke;
+  color:aqua;
   display: block;
   transition: 0.3s;
   text-align: left;
@@ -38,8 +37,7 @@
 
 p{
   text-align: left;
-  margin: 1em;
-  padding: 0.2em;
+
 }
 
 .mainContainer{
@@ -48,11 +46,20 @@ p{
   align-items: left;
 }
 
-.topProject{
+.topCard{
   display: flex;
   flex-direction:row;
   align-items: center;
+  color:aqua;
 }
+
+.bodyCard{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  color: whitesmoke;
+}
+
 
 .profileImage{
   width: 14em;
@@ -68,24 +75,24 @@ p{
   flex-direction:row-reverse;
   align-items: center;
   background-color:   rgb(18, 18, 92);
-  color: white;
+  color:aqua;
 }
 
 .containerSide{
   display: flex;
   flex-direction:column;
   align-items: left;
-  width: 45em;
+  width: 40em;
   padding: 1em;
 }
 
 a{
-  margin: 1em;
-  padding: 1em;
+  margin: 0.2em;
+  padding: 0.2em;
 }
 
 .containerProject{
-  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .previewLink{
@@ -102,4 +109,23 @@ ul { list-style-type: none; }
 
 .author{
   margin-left: 1px;
+  width: 25em;
+}
+
+.description{
+  display: block;
+  width: 39em;
+}
+
+.titleHeader{
+  margin: 1em;
+  padding: 1em;
+}
+
+.lateralFoto{
+  display: block;
+}
+
+.name{
+  color: aqua;
 }

@@ -1,6 +1,7 @@
 
 import { AiFillGithub } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Footer = () => {
     return <div className="Footer">
@@ -9,6 +10,8 @@ const Footer = () => {
  <TfiEmail/></a>
  <a  href="https://github.com/CarmenChapi"> 
  <AiFillGithub/></a>
+ <a  href="tel:+447821024370"> 
+ <FaPhoneSquareAlt/></a>
  <p>Contact me</p>
 
     </div>
