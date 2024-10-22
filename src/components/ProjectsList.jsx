@@ -4,7 +4,7 @@ const projectListArray = [
     {
         name:"NC News Back End",
         author: "CarmenChapi",
-        avatar : "./src/assets/newsApi.png",
+        avatar : "/src/assets/newsapi.png",
         link: "https://newscarmen.onrender.com/api",
         github : "https://github.com/CarmenChapi/NewsCarmen",
         techStack : ["JavaScript", "Express", "Postgres", "TDD"],
@@ -13,7 +13,7 @@ const projectListArray = [
     {
         name: "Questionaire",
         author: "CarmenChapi and Ibrahim Ahmed",
-        avatar : "./src/assets/Question.png",
+        avatar : "/src/assets/Question.png",
         link: "https://questionairecarmenchapi.netlify.app",
         github : "https://github.com/CarmenChapi/Questions.git",
         techStack : ["HTML", "CSS"],
@@ -22,7 +22,7 @@ const projectListArray = [
     {
         name: "Calculator",
         author: "CarmenChapi and Indigo Moorcroft",
-        avatar : "./src/assets/Calculator.png",
+        avatar : "/src/assets/Calculator.png",
         link: "https://calculator-carmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/Calculator.git",
         techStack : ["React", "CSS", "JS"],
@@ -31,7 +31,7 @@ const projectListArray = [
     {
         name: "TV Guide",
         author: "CarmenChapi and Martin Sutch",
-        avatar : "./src/assets/TVGuide.png",
+        avatar : "/src/assets/TVGuide.png",
         link: "https://tv-guide-carmen-chapi.netlify.app",
         github : "https://github.com/CarmenChapi/fe-react-data-visualisation",
         techStack : ["React", "CSS", "JS"],
@@ -40,7 +40,7 @@ const projectListArray = [
     {
         name: "NC News Front End",
         author: "CarmenChapi",
-        avatar : "./src/assets/NCNews.png",
+        avatar : "/src/assets/NCNews.png",
         link: "https://ncnewscarmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/nc-news",
         techStack : ["React", "CSS", "JS","Axios"],
@@ -49,7 +49,7 @@ const projectListArray = [
     {
         name: "ReadShare App Back End",
         author: "the group Array of Sunshine",
-        avatar : "./src/assets/firebase.png",
+        avatar : "/src/assets/firebase.png",
         link: "https://github.com/Array-of-Sunshine-Library-App/library-api",
         github : "https://github.com/Array-of-Sunshine-Library-App/library-api",
         techStack : ["Firebase", "JavaScript", "TDD"],
@@ -58,7 +58,7 @@ const projectListArray = [
     {
         name: "ReadShare App Front End",
         author: "the group Array of Sunshine",
-        avatar : "./src/assets/react.svg",
+        avatar : "/src/assets/react.svg",
         link: "",
         techStack : ["TypeScript", "React-Native", "Axios"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",
