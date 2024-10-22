@@ -4,7 +4,8 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="containerProject">
       <div className="topCard">
-        <a href={project.github}>
+        <a href={project.github} alt="GitHub Project"
+        rel="GitHub" title="See the project in GitHub"> 
           <AiFillGithub />
         </a>
         <p>
@@ -13,10 +14,11 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="bodyCard">
-        <a href={project.link}>
+        <a href={project.link} alt="Link Project"
+        rel="Project" title="See the project website"> 
           <img
             className="previewLink"
-            tab={project.name + " preview"}
+            tab={project.name + " website preview"}
             src={project.avatar}
           />
         </a>

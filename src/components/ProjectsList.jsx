@@ -15,7 +15,7 @@ const projectListArray = [
         avatar : newsapi,
         link: "https://newscarmen.onrender.com/api",
         github : "https://github.com/CarmenChapi/NewsCarmen",
-        techStack : ["JavaScript", "Express", "Postgres", "TDD"],
+        techStack : ["JavaScript", "Express", "Postgres", "TDD", "Node.js"],
         description : "A RESTful API to access and use data in a back end service for a news website",
     },
     {
