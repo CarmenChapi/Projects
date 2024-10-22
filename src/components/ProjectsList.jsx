@@ -1,10 +1,18 @@
 import ProjectCard from "./ProjectCard"
 
+import newsapi from "/src/assets/newsapi.png";
+import Question from "/src/assets/Question.png";
+import Calculator from "/src/assets/Calculator.png";
+import TVGuide from "/src/assets/TVGuide.png";
+import NCNews from "/src/assets/NCNews.png";
+import firebase from "/src/assets/firebase.png";
+import react from "/src/assets/react.svg";
+
 const projectListArray = [
     {
         name:"NC News Back End",
         author: "CarmenChapi",
-        avatar : "/src/assets/newsapi.png",
+        avatar : newsapi,
         link: "https://newscarmen.onrender.com/api",
         github : "https://github.com/CarmenChapi/NewsCarmen",
         techStack : ["JavaScript", "Express", "Postgres", "TDD"],
@@ -13,7 +21,7 @@ const projectListArray = [
     {
         name: "Questionaire",
         author: "CarmenChapi and Ibrahim Ahmed",
-        avatar : "/src/assets/Question.png",
+        avatar : Question,
         link: "https://questionairecarmenchapi.netlify.app",
         github : "https://github.com/CarmenChapi/Questions.git",
         techStack : ["HTML", "CSS"],
@@ -22,7 +30,7 @@ const projectListArray = [
     {
         name: "Calculator",
         author: "CarmenChapi and Indigo Moorcroft",
-        avatar : "/src/assets/Calculator.png",
+        avatar : Calculator,
         link: "https://calculator-carmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/Calculator.git",
         techStack : ["React", "CSS", "JS"],
@@ -31,7 +39,7 @@ const projectListArray = [
     {
         name: "TV Guide",
         author: "CarmenChapi and Martin Sutch",
-        avatar : "/src/assets/TVGuide.png",
+        avatar : TVGuide,
         link: "https://tv-guide-carmen-chapi.netlify.app",
         github : "https://github.com/CarmenChapi/fe-react-data-visualisation",
         techStack : ["React", "CSS", "JS"],
@@ -40,7 +48,7 @@ const projectListArray = [
     {
         name: "NC News Front End",
         author: "CarmenChapi",
-        avatar : "/src/assets/NCNews.png",
+        avatar : NCNews,
         link: "https://ncnewscarmenchapi.netlify.app/",
         github : "https://github.com/CarmenChapi/nc-news",
         techStack : ["React", "CSS", "JS","Axios"],
@@ -49,7 +57,7 @@ const projectListArray = [
     {
         name: "ReadShare App Back End",
         author: "the group Array of Sunshine",
-        avatar : "/src/assets/firebase.png",
+        avatar : firebase,
         link: "https://github.com/Array-of-Sunshine-Library-App/library-api",
         github : "https://github.com/Array-of-Sunshine-Library-App/library-api",
         techStack : ["Firebase", "JavaScript", "TDD"],
@@ -58,7 +66,7 @@ const projectListArray = [
     {
         name: "ReadShare App Front End",
         author: "the group Array of Sunshine",
-        avatar : "/src/assets/react.svg",
+        avatar : react,
         link: "",
         techStack : ["TypeScript", "React-Native", "Axios"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",

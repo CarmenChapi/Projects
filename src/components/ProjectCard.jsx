@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         <a href={project.link}>
           <img
             className="previewLink"
-            tab={project.name}
+            tab={project.name + " preview"}
             src={project.avatar}
           />
         </a>
