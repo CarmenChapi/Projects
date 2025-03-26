@@ -2,8 +2,7 @@
 
 const Header = () => {
     return <><div className="Header">
-    <p className="titleHeader"><b>Junior Software Developer</b> Portfolio</p>
-    
+    <h1 className="titleHeader">Junior Software Developer</h1>
     </div>
     </>
 

@@ -2,34 +2,35 @@ import { AiFillGithub } from "react-icons/ai";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="containerProject">
-      <div className="topCard">
-        <a href={project.github} alt="GitHub Project"
-        rel="GitHub" title="See the project in GitHub"> 
-          <AiFillGithub />
-        </a>
-        <p>
-          <b>{project.name}</b>
-        </p>
-      </div>
+    <div className="projectCard">
+      <h3 className="project-title">
+        <a href={project.github}
+        rel="noopener noreferrer"
+        target="_blank"
+        title="See the project in GitHub"> 
+          <AiFillGithub />{   }{project.name}
+        </a></h3>
+    
 
-      <div className="bodyCard">
-        <a href={project.link} alt="Link Project"
-        rel="Project" title="See the project website"> 
+   
+        <a href={project.link} 
+        target="_blank"
+        rel="noopener noreferrer" 
+        title="See the project website"> 
           <img
             className="previewLink"
-            tab={project.name + " website preview"}
+            alt={project.name + " website preview"}
             src={project.avatar}
+    
           />
         </a>
-        <div className="lateralFoto">
-        <p className="description"> Made by {project.author}</p>
-        <p className="description"> Using {project.techStack.join()}</p>
-        <p className="description">{project.description}</p>
+        <div className="infoProject">
+        <p ><strong>Made by </strong>{project.author}</p>
+        <p ><strong>Tech </strong>{project.techStack.join()}</p>
+        <p ><strong>Description </strong>{project.description}</p>
+      
         </div>
-      </div>
-
-    </div>
+        </div>
   );
 };
 
