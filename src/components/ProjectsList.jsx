@@ -16,7 +16,7 @@ const projectListArray = [
         link: "https://newscarmen.onrender.com/api",
         github : "https://github.com/CarmenChapi/NewsCarmen",
         techStack : ["JavaScript", "Express", "Postgres", "TDD", "Node.js"],
-        description : "I implemented a RESTful API service to power the news website's dynamic content. Developed secure endpoints for CRUD operations on news articles, topics, comments, and user preferences. Optimized data delivery with efficient query parameters for improved performance",
+        description : "I implemented a RESTful API to supply  a news website's content. Developed secure endpoints for CRUD operations on news articles, topics, comments, and user preferences. Optimized data delivery with efficient query parameters for improved performance and scalability. ",
     },
     {
         name: "Questionaire",
@@ -25,7 +25,7 @@ const projectListArray = [
         link: "https://questionairecarmenchapi.netlify.app",
         github : "https://github.com/CarmenChapi/Questions.git",
         techStack : ["HTML", "CSS"],
-        description : "A little questionnaire using DOM manipulation methods, using a 2k aesthetic. ",
+        description : "This is a small questionnaire that utilises DOM manipulation methods and is designed with a 2k aesthetic.",
     },
     {
         name: "Calculator",
@@ -34,7 +34,7 @@ const projectListArray = [
         link: "https://calculator-carmenchapi.netlify.app/",
         github : "https://github.com/indymoorcroft/fe-tiny-react-apps/tree/main/calculator-project",
         techStack : ["React", "CSS", "JS", "Vite"],
-        description : "Calculator React app, planning, creating and building from 0 this mini-app, adding css styling",
+        description : "React app calculator, I helped with the planning, development, and construction of this mini-app, providing CSS styling.",
     },
     {
         name: "TV Guide",
@@ -43,7 +43,7 @@ const projectListArray = [
         link: "https://tv-guide-carmen-chapi.netlify.app",
         github : "https://github.com/CarmenChapi/fe-react-data-visualisation",
         techStack : ["React", "CSS", "JS", "Vite"],
-        description : "App to visualise data in React using third-party library, TV Guide. With a search  functionality",
+        description : "TV Guide is a third-party package used in this React app to visualize data. Having search functionality",
     },
     {
         name: "NC News Front End",

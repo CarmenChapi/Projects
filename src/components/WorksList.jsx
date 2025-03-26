@@ -10,7 +10,7 @@ const projectList = [
         link: "https://se-curator-be.onrender.com/api",
         github : "https://github.com/CarmenChapi/SE-ExhibitionCurationP-BE.git",
         techStack : ["JavaScript", "Express", "Postgres", "TDD", "Node.js"],
-        description : "Project to provide a REST API to the project Exhibition Curation Project. With the API, the user can interact with a digital collection of artworks. It enables CRUD (Create, Read, Update, Delete) operations for collections and artworks.",
+        description : "The Exhibition Curation Project will receive a REST API from this project. The user can engage with a digital collection of artworks using the API. For collections and artworks, it makes CRUD (Create, Read, Update, Delete) operations possible.",
     },
     {
         name:"Exhibition Curation Platform",
@@ -19,7 +19,7 @@ const projectList = [
         link: "https://curationplatform.netlify.app/",
         github : "https://github.com/CarmenChapi/SE-Exhibition-Curation-Platform-FE.git",
         techStack : ["React", "CSS", "JS", "Vite", "Firebase", "Tailwind"],
-        description : "React.js application that allows users to explore artworks from various museums and universities. Users can view their exhibitions and the saved items within each collection. It includes Firebase Authentication, integrates with multiple artwork APIs, and provides an excellent experience for searching, creating curation collections and saving artworks",
+        description : "An application built using React.js that lets users view artwork from different institutions and museums. Users are able to see their collections' stored items as well as their exhibits. It offers a great experience for searching, curating collections, and storing artworks, and it interfaces with several artwork APIs and has Firebase authentication.",
     }
 ]
 
