@@ -8,6 +8,7 @@ const Footer = () => {
     <div className="Footer">
       
       <a
+      className="footLink"
         alt="linkedin"
         href="https://www.linkedin.com/in/maria-del-carmen-chaparro-g%C3%B3mez-403655358/"
         target="_blank"
@@ -17,6 +18,7 @@ const Footer = () => {
           <FaLinkedin />
           </a>
       <a
+         className="footLink"
         alt="email link"
         href="mailto:mariachaparro58@gmail.com?subject=Hi Carmen"
         rel="email"
@@ -25,6 +27,7 @@ const Footer = () => {
         <TfiEmail />
       </a>
       <a
+         className="footLink"
         alt="github link"
         target="_blank"
         rel="noopener noreferrer"
@@ -34,6 +37,7 @@ const Footer = () => {
         <AiFillGithub />
       </a>
       <a
+         className="footLink"
         alt="contact phone link"
         href="tel:+447821024370"
         rel="phone"
@@ -41,8 +45,8 @@ const Footer = () => {
       >
         <FaPhoneSquareAlt />
       </a>
-      {/* <p>Contact me</p> */}
-      <p>I’m currently open to junior roles, internships, or freelance opportunities – let’s talk!</p>
+     
+      <p className="footText">Available for full-stack opportunities and freelance collaborations <b className="name"> – let’s talk! </b></p>
     </div>
   );
 };

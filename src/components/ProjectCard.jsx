@@ -3,16 +3,18 @@ import { AiFillGithub } from "react-icons/ai";
 const ProjectCard = ({ project }) => {
   return (
     <div className="projectCard">
-      <h3 className="project-title">
-        <a href={project.github}
+      <h3 >
+        <a className="titleLink"
+        href={project.github}
         rel="noopener noreferrer"
+  
         target="_blank"
         title="See the project in GitHub"> 
-          <AiFillGithub />{   }{project.name}
+          <AiFillGithub />{project.name}
         </a></h3>
     
 
-   
+    {"No link" != project.link ?
         <a href={project.link} 
         target="_blank"
         rel="noopener noreferrer" 
@@ -24,10 +26,18 @@ const ProjectCard = ({ project }) => {
     
           />
         </a>
+        :    <img
+            className="previewLink2"
+            alt={project.name + "firebase logo"}
+            src={project.avatar}
+    
+          />}
+
+
         <div className="infoProject">
-        <p ><strong>Made by </strong>{project.author}</p>
-        <p ><strong>Tech </strong>{project.techStack.join()}</p>
-        <p ><strong>Description </strong>{project.description}</p>
+        <p ><strong className="descripColor">Made by </strong>{project.author}</p>
+        <p ><strong className="descripColor">Tech </strong>{project.techStack.join()}</p>
+        <p ><strong className="descripColor">Description </strong>{project.description}</p>
       
         </div>
         </div>
