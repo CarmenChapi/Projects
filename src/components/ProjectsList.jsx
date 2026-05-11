@@ -1,11 +1,11 @@
 import ProjectCard from "./ProjectCard"
 
-import newsapi from "/src/assets/newsapi.png";
+import newsapi from "/src/assets/Node.js.png";
 import Question from "/src/assets/Question.png";
 import Calculator from "/src/assets/Calculator.png";
 import TVGuide from "/src/assets/TVGuide.png";
 import NCNews from "/src/assets/NCNews.png";
-import firebase from "/src/assets/firebase.png";
+import firebase from "/src/assets/Firebase.png";
 import readshare from "/src/assets/readshare.png";
 
 const projectListArray = [

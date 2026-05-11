@@ -6,11 +6,7 @@ const AboutMe = () => {
         <p>My name is <b className="name">Maria del Carmen Chaparro </b> (She/her)</p>
         <p>But people call me Carmen /kaar·muhn/</p>
         <img className="profileImage" alt="carmen profile photo" src={carmen}/>
-<p>I recently completed a bootcamp with Northcoders, and I built this website to showcase what I've learned along the way. While programming wasn't new to me, the experience deepened my knowledge and challenged me to grow.
-
-This portfolio highlights my learning journey from backend development using JavaScript, Express, Postgres, TDD, and Node.js, to building responsive frontends with React, CSS, Axios, and Vite. I also had the chance to work with Firebase and strengthen my skills through collaborative projects.
-
-Most importantly, this journey showed me how much I enjoy learning and how much more I'm excited to explore in tech.
+<p>I am a Full-Stack Developer with a unique professional arc. After starting my career in Spain as a Java and SQL Developer, I spent almost ten years in London mastering the art of communication and teamwork in hospitality. I pivoted back to my technical roots, completing an intensive bootcamp to add JavaScript, Node.js, and React to my repertoire. I build applications that are as robust as they are user-centric, combining years of professional discipline with a fresh, modern tech stack.
 </p>
     </div>
 }
