@@ -11,7 +11,7 @@ const projectList = [
         linkLabel: "API endpoint",
         github : "https://github.com/CarmenChapi/SE-ExhibitionCurationP-BE.git",
         techStack : ["JavaScript", "Express", "Postgres", "TDD", "Node.js"],
-        description : "REST API for the exhibition curation platform, supporting artwork, collection and exhibition data across the product.",
+        description : "REST API for the exhibition curation platform, supporting artworks, collections data across the product.",
     },
     {
         name:"Curatoria",
@@ -24,12 +24,13 @@ const projectList = [
         github : "https://github.com/CarmenChapi/SE-Exhibition-Curation-Platform-FE.git",
         featured: true,
         techStack : ["React(Vite)", "React Router", "Firebase Auth"],
-        description : "Frontend for an exhibition curation platform delivered as one product across separate frontend and backend repositories. Since client delivery, I have continued refining the interface and technical polish.",
+        description : "React application for exploring and curating artworks from world-class museums and universities. Browse thousands of pieces across six institution APIs, build personal exhibition collections, and manage them with a full CRUD backend — all behind secure Firebase Authentication.",
         highlights: [
             "Delivered the product across frontend and backend repositories",
             "Integrated museum APIs behind a focused artwork curation flow",
             "Added Firebase authentication, protected user collections and routed app views",
         ],
+        note : "Since client delivery, I have continued refining the interface and technical polish."
     }
 ]
 

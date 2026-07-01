@@ -7,7 +7,7 @@ const AboutMe = () => {
             <section className="aboutCopy">
                 <h2>Hello, world!</h2>
                 <p>My name is <b className="name">Maria del Carmen Chaparro Gomez</b> </p>
-                <p>She/her /kaar·muhn/</p>
+                <p className="aboutPronouns">She/her /kaar·muhn/</p>
                 <p>I am a Full-Stack Developer with a professional path that started in Spain with Java and SQL, then expanded through nearly ten years in London hospitality, where I sharpened communication, teamwork and delivery under pressure.</p>
                 <p>I returned to software through an intensive full-stack bootcamp, adding JavaScript, Node.js and React to my background. I build practical, user-centred applications with a mix of technical foundations, product curiosity and real-world discipline.</p>
                 <ul className="aboutTechStack" aria-label="Core technologies">

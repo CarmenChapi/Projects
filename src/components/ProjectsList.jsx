@@ -67,10 +67,10 @@ const projectListArray = [
         github : "https://github.com/CarmenChapi/nc-news",
         featured: true,
         techStack : ["React", "CSS", "JS","Axios", "Vite"],
-        description : "Frontend for my NC News API, covering article browsing, comments, voting and topic discovery.",
+        description : "Frontend for my NC News API, covering article browsing, comments, and voting.",
         highlights: [
             "Connected React to my own REST API with Axios",
-            "Implemented topic filters, sorting, comments and optimistic votes",
+            "Implemented topic filters, sorting, comments and votes",
             "Handled loading, error and interaction states across the app",
         ],
     },
@@ -94,13 +94,13 @@ const projectListArray = [
         techStack : ["TypeScript", "React Native", "Axios", "Expo"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",
         featured: true,
-        description : "Collaborative React Native app for tracking lent books with friends and managing a personal library.",
+        description : "React Native app for tracking lent books with friends and managing a personal library.",
         highlights: [
             "Built authentication flows and shared user state",
             "Debugged requests and optimistic UI behaviour",
             "Configured the production web deployment",
         ],
-        note: "Bootcamp final project delivered collaboratively by Array of Sunshine.",
+        note: "The demo represents the version delivered at the end of the course. The repository may contain additional changes made by other contributors after.",
     }
 ]
 
