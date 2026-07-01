@@ -9,39 +9,39 @@ const Footer = () => {
       
       <a
       className="footLink"
-        alt="linkedin"
+        aria-label="LinkedIn profile"
         href="https://www.linkedin.com/in/maria-del-carmen-chaparro-g%C3%B3mez-403655358/"
         target="_blank"
         rel="noopener noreferrer"
-        title="Contact with me by linkedin"
+        title="Contact me on LinkedIn"
       >
           <FaLinkedin />
           </a>
       <a
          className="footLink"
-        alt="email link"
+        aria-label="Email Carmen"
         href="mailto:mariachaparro58@gmail.com?subject=Hi Carmen"
         rel="email"
-        title="Contact with me by email"
+        title="Contact me by email"
       >
         <TfiEmail />
       </a>
       <a
          className="footLink"
-        alt="github link"
+        aria-label="GitHub profile"
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/CarmenChapi"
-        title="Contact with me by GitHub"
+        title="View my GitHub"
       >
         <AiFillGithub />
       </a>
       <a
          className="footLink"
-        alt="contact phone link"
+        aria-label="Call Carmen"
         href="tel:+447821024370"
         rel="phone"
-        title="Contact with me by phone"
+        title="Contact me by phone"
       >
         <FaPhoneSquareAlt />
       </a>

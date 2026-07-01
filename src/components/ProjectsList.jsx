@@ -1,96 +1,152 @@
 import ProjectCard from "./ProjectCard"
-
-import newsapi from "/src/assets/Node.js.png";
-import Question from "/src/assets/Question.png";
-import Calculator from "/src/assets/Calculator.png";
-import TVGuide from "/src/assets/TVGuide.png";
-import NCNews from "/src/assets/NCNews.png";
-import firebase from "/src/assets/Firebase.png";
-import readshare from "/src/assets/readshare.png";
+import {
+    PiBookOpenTextBold,
+    PiCalculatorBold,
+    PiDatabaseBold,
+    PiFireBold,
+    PiNewspaperClippingBold,
+    PiQuestionBold,
+    PiTelevisionSimpleBold,
+} from "react-icons/pi";
 
 const projectListArray = [
     {
         name:"NC News Back End",
+        phase: "Northcoders week 7",
         author: "CarmenChapi",
-        avatar : newsapi,
+        avatarIcon : PiDatabaseBold,
         link: "https://newscarmen.onrender.com/api",
+        linkLabel: "API endpoint",
         github : "https://github.com/CarmenChapi/NewsCarmen",
         techStack : ["JavaScript", "Express", "Postgres", "TDD", "Node.js"],
-        description : "I implemented a RESTful API to supply  a news website's content. Developed secure endpoints for CRUD operations on news articles, topics, comments, and user preferences. Optimized data delivery with efficient query parameters for improved performance and scalability",
+        description : "RESTful API for a news platform, with endpoints for articles, topics, comments and users.",
+        highlights: [
+            "Built tested Express endpoints with PostgreSQL",
+            "Added filtering, sorting and pagination",
+            "Covered success and error paths with TDD",
+        ],
     },
     {
-        name: "Questionaire",
+        name: "Questionnaire",
+        phase: "Early bootcamp project",
         author: "CarmenChapi and Ibrahim Ahmed",
-        avatar : Question,
+        avatarIcon : PiQuestionBold,
         link: "https://questionairecarmenchapi.netlify.app",
         github : "https://github.com/CarmenChapi/Questions.git",
         techStack : ["HTML", "CSS"],
-        description : "This is a questionnaire about animals that utilises DOM manipulation methods and is designed with a 2k aesthetic",
+        description : "Early bootcamp project focused on DOM manipulation, semantic HTML and CSS.",
     },
     {
         name: "Calculator",
+        phase: "React foundations",
         author: "CarmenChapi and Indigo Moorcroft",
-        avatar : Calculator,
+        avatarIcon : PiCalculatorBold,
         link: "https://calculator-carmenchapi.netlify.app/",
         github : "https://github.com/indymoorcroft/fe-tiny-react-apps/tree/main/calculator-project",
         techStack : ["React", "CSS", "JS", "Vite"],
-        description : "React app calculator, I helped with the planning, development, and construction of this mini-app, providing CSS styling",
+        description : "React calculator mini-app where I contributed planning, components and CSS.",
     },
     {
         name: "TV Guide",
+        phase: "API data visualisation",
         author: "CarmenChapi and Martin Sutch",
-        avatar : TVGuide,
+        avatarIcon : PiTelevisionSimpleBold,
         link: "https://tv-guide-carmen-chapi.netlify.app",
         github : "https://github.com/CarmenChapi/fe-react-data-visualisation",
         techStack : ["React", "CSS", "JS", "Vite"],
-        description : "TV Guide is a React-based web application that allows users to search for TV shows and explore detailed information using real-time data from a public API",
+        description : "React app for searching TV shows and exploring programme details from a public API.",
     },
     {
         name: "NC News Front End",
+        phase: "Full-stack solo project",
         author: "CarmenChapi",
-        avatar : NCNews,
+        avatarIcon : PiNewspaperClippingBold,
         link: "https://ncnewscarmenchapi.netlify.app/",
+        linkLabel: "Live demo",
+        youtube : "https://www.youtube.com/watch?v=a5SHwSH1TdQ&list=PLi5Ujb8-Rko6dtajZvAg8dM7xWZ-iRz3a",
         github : "https://github.com/CarmenChapi/nc-news",
+        featured: true,
         techStack : ["React", "CSS", "JS","Axios", "Vite"],
-        description : "React app about a news Website C.R.U.D from the Front End perspective using previously created News API endpoints. Implemented user login/logout functionality. Category filtering to browse news by topics of interest. sorting options (date, likes, comments.) for customized content organization. Comment functionality with real-time display and management (add/delete). Like/dislike reactions for both news articles and user comments",
+        description : "Frontend for my NC News API, covering article browsing, comments, voting and topic discovery.",
+        highlights: [
+            "Connected React to my own REST API with Axios",
+            "Implemented topic filters, sorting, comments and optimistic votes",
+            "Handled loading, error and interaction states across the app",
+        ],
     },
     {
         name: "ReadShare App Back End",
+        phase: "Final project backend",
         author: "the group Array of Sunshine",
-        avatar : firebase,
-        link: "No link",
+        avatarIcon : PiFireBold,
         github : "https://github.com/Array-of-Sunshine-Library-App/library-api",
         techStack : ["Firebase", "JavaScript", "TDD"],
-        description : "Final Project Back End. I contributed by configuring and deploying the Firebase project infrastructure, including database services. Also, developing some API endpoints",
-
+        description : "Backend services for the ReadShare final project, including Firebase setup, database services and API endpoints.",
     },
     {
         name: "ReadShare App Front End",
+        phase: "Northcoders final project",
         author: "the group Array of Sunshine",
-        avatar : readshare,
+        avatarIcon : PiBookOpenTextBold,
         link: "https://readshare.netlify.app/",
-        techStack : ["TypeScript", "React-Native", "Axios", "Expo"],
+        linkLabel: "Live demo",
+        youtube : "https://www.youtube.com/watch?v=r55UKBpPN_I",
+        techStack : ["TypeScript", "React Native", "Axios", "Expo"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",
-        description : "Final Project. ReadShare is a ReactNative application designed to help users track the books they lend to friends and manage their book collections. I participated in developing core user authentication, including sign-in, registration, etc. I implemented a User Context to manage the global state. I identified and resolved critical bugs in the request processing using optimistic UI rendering. I also configured and executed the production deployment of the web application.",
-   
+        featured: true,
+        description : "Collaborative React Native app for tracking lent books and managing a personal library.",
+        highlights: [
+            "Built authentication flows and shared user state",
+            "Debugged requests and optimistic UI behaviour",
+            "Configured the production web deployment",
+        ],
+        note: "Bootcamp final project delivered collaboratively by Array of Sunshine.",
     }
 ]
 
-
+const featuredProjects = projectListArray.filter((project) => project.featured);
 
 const ProjectsList = () => {
-    return <div  className="containerSide">
+    return <div className="containerSide">
+        <section className="projectsIntro">
+            <p className="sectionKicker">Northcoders portfolio</p>
+            <h2>Project-based learning journey</h2>
+            <p>
+                A timeline of bootcamp work, from early DOM practice to full-stack applications and a collaborative final product.
+            </p>
+        </section>
 
-        <h3>My project-based learning experience</h3>
+        <section className="projectSection">
+            <div className="sectionHeader">
+                <p className="sectionKicker">Best evidence</p>
+                <h3>Featured projects</h3>
+            </div>
+            <ul className="featuredProjects">
+                {featuredProjects.map((project) => {
+                    return <li key={project.name}>
+                        <ProjectCard
+                            project={project}
+                            variant="featured"
+                            accentIndex={projectListArray.indexOf(project)}
+                        />
+                    </li>
+                })}
+            </ul>
+        </section>
 
-            <ul key="ListProjects" >
+        <section className="projectSection">
+            <div className="sectionHeader">
+                <p className="sectionKicker">The path</p>
+                <h3>Northcoders learning timeline</h3>
+            </div>
+            <ul className="projectTimeline" key="ListProjects">
             {projectListArray.map((project, index) => {
                 return <li key={index}>
-                 <ProjectCard project={project}/>
+                 <ProjectCard project={project} variant="compact" accentIndex={index}/>
                 </li>
             })}
             </ul>
-        
+        </section>
     </div>
 }
 
