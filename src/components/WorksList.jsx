@@ -20,7 +20,7 @@ const projectList = [
         avatarIcon : PiPaletteBold,
         link: "https://curationplatform.netlify.app/",
         linkLabel: "Live demo",
-        youtube : "https://www.youtube.com/watch?v=TkmpbgFlzcs&list=PLi5Ujb8-Rko4y__PtK1r-tIhZ7EjS7gfD",
+        youtube : "https://www.youtube.com/playlist?list=PLi5Ujb8-Rko4y__PtK1r-tIhZ7EjS7gfD",
         github : "https://github.com/CarmenChapi/SE-Exhibition-Curation-Platform-FE.git",
         featured: true,
         techStack : ["React(Vite)", "React Router", "Firebase Auth"],

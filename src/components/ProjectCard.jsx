@@ -37,7 +37,7 @@ const ProjectCard = ({ project, variant = "standard", accentIndex = 0 }) => {
         )}
       </div>
 
-      <div className="projectCard__content">
+      <div className="projectCard__content"> 
         {project.phase && <p className="projectPhase">{project.phase}</p>}
         <h3 className="projectTitle">{project.name}</h3>
 

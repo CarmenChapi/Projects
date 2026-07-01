@@ -94,7 +94,7 @@ const projectListArray = [
         techStack : ["TypeScript", "React Native", "Axios", "Expo"],
         github : "https://github.com/Array-of-Sunshine-Library-App/library-app",
         featured: true,
-        description : "Collaborative React Native app for tracking lent books and managing a personal library.",
+        description : "Collaborative React Native app for tracking lent books with friends and managing a personal library.",
         highlights: [
             "Built authentication flows and shared user state",
             "Debugged requests and optimistic UI behaviour",
