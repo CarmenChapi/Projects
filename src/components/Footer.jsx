@@ -1,24 +1,23 @@
 import { AiFillGithub } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
-import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="Footer">
-      
       <a
-      className="footLink"
+        className="footLink"
         aria-label="LinkedIn profile"
         href="https://www.linkedin.com/in/maria-del-carmen-chaparro-g%C3%B3mez-403655358/"
         target="_blank"
         rel="noopener noreferrer"
         title="Contact me on LinkedIn"
       >
-          <FaLinkedin />
-          </a>
+        <FaLinkedin />
+      </a>
       <a
-         className="footLink"
+        className="footLink"
         aria-label="Email Carmen"
         href="mailto:mariachaparro58@gmail.com?subject=Hi Carmen"
         rel="email"
@@ -27,7 +26,7 @@ const Footer = () => {
         <TfiEmail />
       </a>
       <a
-         className="footLink"
+        className="footLink"
         aria-label="GitHub profile"
         target="_blank"
         rel="noopener noreferrer"
@@ -36,17 +35,21 @@ const Footer = () => {
       >
         <AiFillGithub />
       </a>
+
       <a
-         className="footLink"
-        aria-label="Call Carmen"
-        href="tel:+447821024370"
-        rel="phone"
-        title="Contact me by phone"
+        className="footLink"
+        href="https://t.me/carmenchapi"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Telegram profile"
+        title="Contact me on Telegram"
       >
-        <FaPhoneSquareAlt />
+        <FaTelegramPlane />
       </a>
-     
-      <p className="footText">Available for full-stack opportunities and freelance collaborations <b className="name"> – let’s talk! </b></p>
+      <p className="footText">
+        Available for full-stack opportunities and freelance collaborations{" "}
+        <b className="name"> – let’s talk! </b>
+      </p>
     </div>
   );
 };

@@ -216,12 +216,20 @@ ul {
   min-height: 360px;
 }
 
+.projectCard--featured .projectCard__media,
+.projectCard--featured .projectPreview,
+.projectCard--featured .projectPreviewIcon,
+.projectCard--featured .projectScreenshot {
+  min-height: 360px;
+}
+
 .projectCard--compact {
   display: flex;
   flex-direction: column;
 }
 
 .projectCard__media {
+  position: relative;
   min-height: 180px;
   background:
     linear-gradient(135deg, var(--card-accent-glow), rgba(255, 255, 255, 0.07)),
@@ -231,6 +239,64 @@ ul {
 .projectCard__media a {
   display: block;
   height: 100%;
+}
+
+.projectPreview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.projectPreviewIcon {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  color: var(--card-accent);
+  font-size: clamp(4.5rem, 10vw, 7rem);
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.projectPreviewIcon svg {
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.3));
+}
+
+.projectScreenshot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0;
+  border: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.projectScreenshot--static {
+  position: static;
+  opacity: 1;
+}
+
+.projectCard--featured .projectScreenshot {
+  inset: auto;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 1.8rem);
+  height: auto;
+  max-height: 78%;
+  min-height: 0;
+  padding: 0.9rem;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(circle at center, var(--card-accent-glow), transparent 58%),
+    #0b102d;
 }
 
 .projectAvatarIcon {
@@ -261,6 +327,33 @@ ul {
 .projectCard__media a:hover .previewLink {
   transform: scale(1.03);
   filter: brightness(1.08);
+}
+
+.projectCard__media a:hover .projectScreenshot {
+  opacity: 1;
+  transform: scale(1.03);
+  filter: brightness(1.08);
+}
+
+.projectPreview:hover .projectScreenshot,
+.projectCard__media a:focus-visible .projectScreenshot {
+  opacity: 1;
+  transform: scale(1.03);
+  filter: brightness(1.08);
+}
+
+.projectCard--featured .projectCard__media a:hover .projectScreenshot,
+.projectCard--featured .projectPreview:hover .projectScreenshot,
+.projectCard--featured .projectCard__media a:focus-visible .projectScreenshot {
+  transform: translate(-50%, -50%);
+  filter: brightness(1.05);
+}
+
+.projectPreview:hover .projectPreviewIcon,
+.projectCard__media a:focus-visible .projectPreviewIcon {
+  opacity: 0;
+  color: var(--card-accent-hover);
+  transform: scale(0.96);
 }
 
 .projectCard__media a:hover .projectAvatarIcon {
@@ -405,6 +498,7 @@ ul {
   margin-top: -0.35rem;
   color: var(--muted);
   font-size: 0.92rem;
+  font-style: italic;
   line-height: 1.4;
 }
 
@@ -488,6 +582,28 @@ ul {
     0 0 0 3px rgba(139, 230, 193, 0.22),
     0 18px 36px rgba(255, 177, 153, 0.28);
   transform: translateY(-4px) scale(1.03);
+}
+
+.notFound {
+  display: grid;
+  place-items: center;
+  text-align: left;
+}
+
+.notFoundContent {
+  width: min(100%, 620px);
+}
+
+.notFoundContent h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.notFoundAction {
+  --card-accent: var(--cyan);
+  --card-accent-hover: var(--mint);
+  margin-top: 0.5rem;
 }
 
 .Footer {

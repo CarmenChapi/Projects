@@ -4,10 +4,31 @@ const ProjectCard = ({ project, variant = "standard", accentIndex = 0 }) => {
   const isFeatured = variant === "featured";
   const hasLiveLink = Boolean(project.link);
   const hasYoutubeLink = Boolean(project.youtube);
+  const hasScreenshot = Boolean(project.screenshot);
+  const isCollaborative = Boolean(project.isCollaborative);
   const AvatarIcon = project.avatarIcon;
   const accentClass = `projectCard--accent-${accentIndex % 4}`;
 
-  const avatar = AvatarIcon ? (
+  const media = hasScreenshot ? (
+    AvatarIcon ? (
+      <div className="projectPreview">
+        <div className="projectPreviewIcon" aria-hidden="true">
+          <AvatarIcon />
+        </div>
+        <img
+          className="projectScreenshot"
+          alt={`${project.name} screenshot`}
+          src={project.screenshot}
+        />
+      </div>
+    ) : (
+      <img
+        className="projectScreenshot projectScreenshot--static"
+        alt={`${project.name} screenshot`}
+        src={project.screenshot}
+      />
+    )
+  ) : AvatarIcon ? (
     <div className="projectAvatarIcon" aria-hidden="true">
       <AvatarIcon />
     </div>
@@ -30,14 +51,14 @@ const ProjectCard = ({ project, variant = "standard", accentIndex = 0 }) => {
             title={`Open ${project.name}`}
             aria-label={`Open ${project.name}`}
           >
-            {avatar}
+            {media}
           </a>
         ) : (
-          avatar
+          media
         )}
       </div>
 
-      <div className="projectCard__content"> 
+      <div className="projectCard__content">
         {project.phase && <p className="projectPhase">{project.phase}</p>}
         <h3 className="projectTitle">{project.name}</h3>
 
@@ -76,10 +97,12 @@ const ProjectCard = ({ project, variant = "standard", accentIndex = 0 }) => {
         </div>
 
         <div className="infoProject">
-          <p>
-            <strong className="descripColor">Made by </strong>
-            {project.author}
-          </p>
+          {isCollaborative && (
+            <p>
+              <strong className="descripColor">Built with </strong>
+              {project.author}
+            </p>
+          )}
           <p>
             <strong className="descripColor">Tech </strong>
             {project.techStack.join(", ")}
