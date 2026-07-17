@@ -9,7 +9,7 @@ const Footer = () => {
       <a
         className="footLink"
         aria-label="LinkedIn profile"
-        href="https://www.linkedin.com/in/maria-del-carmen-chaparro-g%C3%B3mez-403655358/"
+        href="https://www.linkedin.com/in/maria-del-carmen-chaparro"
         target="_blank"
         rel="noopener noreferrer"
         title="Contact me on LinkedIn"
